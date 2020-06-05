@@ -1,0 +1,242 @@
+@font-face {
+    src: url(Fonts/BowlbyOneSC-Regular.ttf);
+    font-family: bowlbyonesc;
+}
+@font-face {
+    src: url(Fonts/Chewy-Regular.ttf);
+    font-family: chewy;
+}
+@font-face {
+    src: url(Fonts/Pangolin-Regular.ttf);
+    font-family: pangolin;
+}
+
+
+
+body {
+    background-color: whitesmoke;
+}
+
+                                                        /* HEADER EDIT */
+#header {
+    height: 100px;
+}
+.dee {
+    font-family: chewy;
+    color: lightgrey;
+    font-size: 35px;
+    margin-left: 50px;
+}
+.akay {
+    color: orange;
+}
+#color {
+    color: orange; /* FOR ACTIVE WORK LINK */
+}
+.nav-link:hover {
+    border-bottom: 2px solid orange;
+}
+.active {
+    border-bottom: 2px solid orange;
+}
+
+                                                        /* THINGS HEADING */
+.things {
+    font-family: bowlbyonesc;
+    color: orange;
+    text-shadow: 5px 5px 4px grey;
+    opacity: 0.8;
+}
+
+                                                        /* GO TO TOP BTN EDIT */
+#myBtn {
+    display: none; /*Hidden by default*/
+    bottom: 20px; /*Place the button at the bottom of the page */
+    right: 30px; /*Place the button 30px from the right*/
+    z-index: 99; /* Make sure it does not overlap */
+    outline: none; /*Remove outline*/
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    cursor: pointer; /* Add a mouse pointer on hover */
+  }
+#myBtn:hover {
+    background-color: rgb(190, 187, 187);
+}
+
+
+
+                                                        /* FLIPBOX EDIT */
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    margin-left: 2%;
+    margin-top: 3%;
+    display: inline-flex;
+    box-shadow: -5px -5px 10px 5px rgba(0, 0, 0, 0.5);
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: rgb(52,58,64);
+    color: white;
+    transform: rotateY(180deg);
+    font-family: pangolin;
+  }
+
+  .btn {
+      background-color: lightgrey;
+      color: rgb(52,58,64); 
+      box-shadow: 0 0 10px rgba(216, 206, 206, 0.25);
+      border: none;
+      font-family: pangolin;
+  }
+  .btn:hover {
+      background-color: orange;
+      color: rgb(52,58,64); 
+  }
+
+
+
+                                                        /* FOOTER EDIT */
+.fa {
+    padding: 20px;
+    font-size: 25px !important;
+    color: white;
+}
+.fa:hover {
+    color: orange;
+}
+.footer {
+    height: 200px;
+    margin-top: 5%;
+}
+.verticalhr {
+    width: 30px;
+    height: 1px;
+    background-color: lightgrey;
+    transform: rotate(90deg);
+}
+#copyright {
+    color: white;
+}
+
+
+                                                        /* MEDIA QUERIES */
+
+@media only screen and (min-width: 630px) { /* MINIMUM WIDTH*/
+    .flip-box {
+        margin-left: 3%;
+    }
+}
+@media only screen and (min-width: 643px) { /* MINIMUM WIDTH*/
+    .footer {
+        margin-top: 140px;
+    }
+}
+@media only screen and (min-width: 999px) { /* MINIMUM WIDTH*/
+    .flip-box {
+        margin-left: 4%;
+    }
+}
+@media only screen and (min-width: 1033px) { /* MINIMUM WIDTH*/
+    .flip-box {
+        margin-left: 5%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .nav-link:hover {
+        border-bottom: none;
+    }
+    .active {
+        border-bottom: none;
+    }
+}
+@media only screen and (max-width: 823px){
+    .dee {
+        margin-left: 1%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .flip-box {
+        margin-top: 5%;
+    }
+}
+@media only screen and (max-width: 768px) {
+      #myBtn {
+          right: 20px;
+          width: 40px;
+          height: 40px;
+      }
+}
+@media only screen and (max-width: 414px) {
+    #myBtn {
+        right: 5px;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .fa {
+        padding: 15px !important;
+    }
+}
+@media only screen and (max-width: 354px) {
+    .things {
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .fa {
+        font-size: 15px !important;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .things {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 316px) {
+    .fa {
+        padding: 10px !important;
+    }
+}
+@media only screen and (max-width: 276px) {
+    .fa {
+        padding: 5px !important;
+    }
+}

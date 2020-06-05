@@ -1,0 +1,266 @@
+@font-face {
+    src: url(Fonts/BowlbyOneSC-Regular.ttf);
+    font-family: bowlbyonesc;
+}
+@font-face {
+    src: url(Fonts/Chewy-Regular.ttf);
+    font-family: chewy;
+}
+@font-face {
+    src: url(Fonts/Pangolin-Regular.ttf);
+    font-family: pangolin;
+}
+@font-face {
+    src: url(Fonts/Righteous-Regular.ttf);
+    font-family: righteous;
+}
+
+                                                        /* HEADER EDIT */
+#header {
+    height: 100px;
+}
+.dee {
+    font-family: chewy;
+    color: lightgrey;
+    font-size: 35px;
+    margin-left: 50px;
+}
+.akay {
+    color: orange;
+}
+#color {
+    color: orange; /* FOR ACTIVE HOME LINK */
+}
+.nav-link:hover {
+    border-bottom: 2px solid orange;
+}
+.active {
+    border-bottom: 2px solid orange;
+}
+
+
+                                                        /* TAGLINE EDIT */
+.tagline {
+    font-family: righteous;
+    font-size: 60px;
+    text-shadow: 5px 5px 6px darkgrey;
+}
+
+
+                                                        /* INTRO PARA EDIT */
+.introlines  {
+    font-family: pangolin;
+    font-size: larger;
+    color: grey;
+    line-height: 28px;
+    padding-top: 80px;
+}
+#introlines {
+    box-shadow: 10px 10px 5px darkgrey;
+    background-color: whitesmoke;
+}
+.golink {
+    color: grey;
+}
+.golink:hover {
+    color: orange;
+}
+#introlines > h1 {
+    color: whitesmoke;
+    opacity: 0.2;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 5px 5px 4px black;
+}
+.emailline {
+    font-family: pangolin;
+    font-size: larger;
+    color: grey;
+    line-height: 28px;
+    margin-top: 50px;
+}
+.mymail, .mymailicon{
+    color: grey !important;
+    padding-top: 1px !important;
+    margin-bottom: 70px !important;
+    font-size: 20px !important;
+}
+.mymail {
+    font-family: pangolin;
+}
+.mymail:hover {
+    color: orange !important;
+}
+.mymailicon:hover {
+    font-size: 27px !important;
+}
+
+
+
+
+                                                        /* FOOTER EDIT */
+.fa {
+    padding: 20px;
+    font-size: 25px !important;
+    color: white;
+}
+.fa:hover {
+    color: orange;
+}
+.footer {
+    height: 200px;
+}
+.verticalhr {
+    width: 30px;
+    height: 1px;
+    background-color: lightgrey;
+    transform: rotate(90deg);
+}
+#copyright {
+    color: white;
+}
+
+
+
+                                                        /* GO TO TOP BTN EDIT */
+#myBtn {
+    display: none; /*Hidden by default*/
+    bottom: 20px; /*Place the button at the bottom of the page */
+    right: 30px; /*Place the button 30px from the right*/
+    z-index: 99; /* Make sure it does not overlap */
+    outline: none; /*Remove outline*/
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    cursor: pointer; /* Add a mouse pointer on hover */
+  }
+#myBtn:hover {
+    background-color: rgb(190, 187, 187);
+}
+
+
+                                                          /* MEDIA QUERIES */
+                                                          
+@media only screen and (max-width: 991px) {
+    .nav-link:hover {
+        border-bottom: none;
+    }
+    .active {
+        border-bottom: none;
+    }
+}
+@media only screen and (max-width: 823px){
+    .dee {
+        margin-left: 1%;
+    }
+}
+@media only screen and (max-width: 768px) {
+      #myBtn {
+          right: 20px;
+          width: 40px;
+          height: 40px;
+      }
+}
+@media only screen and (max-width: 542px) {
+    .tagline {
+        font-size: 55px;
+    }
+}
+@media only screen and (max-width: 497px) {
+    .tagline {
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 452px) {
+    .tagline {
+        font-size: 45px;
+    }
+}
+@media only screen and (max-width: 439px) {
+    #introlines > h1 {
+        font-size: 80px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    #myBtn {
+        right: 5px;
+    }
+}
+@media only screen and (max-width: 407px) {
+    .tagline {
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .fa {
+        padding: 15px !important;
+    }
+}
+@media only screen and (max-width: 363px) {
+    .emailline {
+        font-size: large;
+    }
+    .mymail, .mymailicon {
+        font-size: 17px !important;
+    }
+    .mymailicon:hover {
+        font-size: 24px !important;
+    }
+    .introlines {
+        font-size: large;
+    }
+}
+@media only screen and (max-width: 361px) {
+    .tagline {
+        font-size: 35px;
+        text-shadow: 3px 3px 6px darkgrey;
+    }
+}
+@media only screen and (max-width: 357px) {
+    #introlines > h1 {
+        font-size: 70px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .fa {
+        font-size: 15px !important;
+    }
+}
+@media only screen and (max-width: 342px) {
+    .emailline {
+        font-size: medium;
+    }
+    .mymail, .mymailicon {
+        font-size: 14px !important;
+    }
+    .mymailicon:hover {
+        font-size: 21px !important;
+    }
+    .introlines {
+        font-size: medium;
+    }
+}
+@media only screen and (max-width: 316px) {
+    .fa {
+        padding: 10px !important;
+    }
+    #introlines > h1 {
+        font-size: 60px;
+    }
+    .tagline {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 276px) {
+    .fa {
+        padding: 5px !important;
+    }
+}
+@media only screen and (max-width: 271px) {
+    .tagline {
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,242 @@
+@font-face {
+    src: url(Fonts/BowlbyOneSC-Regular.ttf);
+    font-family: bowlbyonesc;
+}
+@font-face {
+    src: url(Fonts/Chewy-Regular.ttf);
+    font-family: chewy;
+}
+@font-face {
+    src: url(Fonts/Pangolin-Regular.ttf);
+    font-family: pangolin;
+}
+
+
+body {
+    background-color: whitesmoke;
+}
+
+
+                                                        /* HEADER EDIT */
+#header {
+    height: 100px;
+}
+.dee {
+    font-family: chewy;
+    color: lightgrey;
+    font-size: 35px;
+    margin-left: 50px;
+}
+.akay {
+    color: orange;
+}
+.nav-link:hover {
+    border-bottom: 2px solid orange;
+}
+.active {
+    border-bottom: 2px solid orange;
+}
+
+
+                                                        /* MY IMAGE EDIT */
+.myimg {
+    height: 400px;
+    background-repeat: no-repeat;
+}
+
+
+
+                                                        /* WELCOME HEADING */
+.welcome {
+    font-family: bowlbyonesc;
+    color: orange;
+}
+
+                                                        /* ABOUT ME SECTION */
+.para {
+    font-family: pangolin;
+    margin-left: 28%;
+    margin-right: 28%;
+    color: grey;
+    line-height: 28px;
+    text-align: justify;
+}
+#color {
+    color: orange; /* FOR ACTIVE ABOUT LINK */
+}
+#whyme {
+    font-family: bowlbyonesc;
+    color: orange;
+}
+
+
+                                                        /* FOOTER EDIT */
+.fa {
+    padding: 20px;
+    font-size: 25px !important;
+    color: white;
+}
+.fa:hover {
+    color: orange;
+}
+.footer {
+    height: 200px;
+}
+.verticalhr {
+    width: 30px;
+    height: 1px;
+    background-color: lightgrey;
+    transform: rotate(90deg);
+}
+#copyright {
+    color: white;
+}
+
+
+                                                        /* GO TO TOP BTN EDIT */
+#myBtn {
+    display: none; /*Hidden by default*/
+    bottom: 20px; /*Place the button at the bottom of the page */
+    right: 30px; /*Place the button 30px from the right*/
+    z-index: 99; /* Make sure it does not overlap */
+    outline: none; /*Remove outline*/
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    cursor: pointer; /* Add a mouse pointer on hover */
+  }
+#myBtn:hover {
+    background-color: rgb(190, 187, 187);
+}
+
+
+                                                          /* MEDIA QUERIES */
+@media only screen and (max-width: 1440px){
+    .myimg {
+        margin-top: 3%;
+    }
+}
+@media only screen and (max-width: 1280px){
+    .para {
+        margin-left: 26%;
+        margin-right: 26%;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .para {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .nav-link:hover {
+        border-bottom: none;
+    }
+    .active {
+        border-bottom: none;
+    }
+}
+@media only screen and (max-width: 823px){
+    .myimg {
+        height: 300px;
+        margin-top: 1%;
+    }
+    .dee {
+        margin-left: 1%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .myimg {
+        height: 250px;
+    }
+    .para {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    #myBtn {
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
+@media only screen and (max-width: 710px){
+    .para {
+        margin-left: 22%;
+        margin-right: 22%;
+    }
+}
+@media only screen and (max-width: 640px){
+    .para {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .para {
+        margin-left: 18%;
+        margin-right: 18%;
+    }
+}
+@media only screen and (max-width: 550px){
+    .para {
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .para {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .para {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media only screen and (max-width: 430px){
+    .para {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #myBtn {
+        right: 5px;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .fa {
+        padding: 15px !important;
+    }
+}
+@media only screen and (max-width: 354px) {
+    .welcome {
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .fa {
+        font-size: 15px !important;
+    }
+}
+@media only screen and (max-width: 320px){
+    .myimg {
+        height: 200px;
+    }
+    .welcome {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 316px) {
+    .fa {
+        padding: 10px !important;
+    }
+}
+@media only screen and (max-width: 276px) {
+    .fa {
+        padding: 5px !important;
+    }
+}

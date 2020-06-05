@@ -1,0 +1,313 @@
+@font-face {
+    src: url(Fonts/BowlbyOneSC-Regular.ttf);
+    font-family: bowlbyonesc;
+}
+@font-face {
+    src: url(Fonts/Chewy-Regular.ttf);
+    font-family: chewy;
+}
+@font-face {
+    src: url(Fonts/Pangolin-Regular.ttf);
+    font-family: pangolin;
+}
+
+
+body {
+    background-color: whitesmoke;
+}
+
+                                                        /* HEADER EDIT */
+#header {
+    height: 100px;
+}
+.dee {
+    font-family: chewy;
+    color: lightgrey;
+    font-size: 35px;
+    margin-left: 50px;
+}
+.akay {
+    color: orange;
+}
+#color {
+    color: orange; /*FOR ACTIVE CONTACT LINK */
+}
+.nav-link:hover {
+    border-bottom: 2px solid orange;
+}
+.active {
+    border-bottom: 2px solid orange;
+}
+
+
+                                                        /* GO TO TOP BTN EDIT */
+#myBtn {
+    display: none; /*Hidden by default*/
+    bottom: 20px; /*Place the button at the bottom of the page */
+    right: 30px; /*Place the button 30px from the right*/
+    z-index: 99; /* Make sure it does not overlap */
+    outline: none; /*Remove outline*/
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    cursor: pointer; /* Add a mouse pointer on hover */
+  }
+#myBtn:hover {
+    background-color: rgb(190, 187, 187);
+}
+
+
+
+                                                        /* BACKGROUND IMAGE EDIT */
+.fixed-bg {
+    background-image: url("Images/Contact BG.jpg");
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+                                                        /* CONTACT FORM EDIT */
+.content {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    font-family: bowlbyonesc;
+    color: orange;
+}
+
+.fixed-bg .content h1 {
+    margin-top: 5%;
+    text-shadow: 1px 1px black, 2px 2px black, 3px 3px black,
+                 4px 4px black, 5px 5px black, 6px 6px black;
+}
+
+.fixed-bg .content h4{
+    margin-top: 4%;
+    line-height: 40px;
+    font-family: pangolin;
+    color: lightgrey;
+}
+
+.fixed-bg .content h4 a {
+    color: lightgrey;
+}
+
+.fixed-bg .content h4 a:hover {
+    color: orange;
+    text-shadow: 0 0 10px black;
+}
+
+.fixed-bg .content h4 a span {
+    font-family: pangolin;
+}
+
+.fixed-bg .content h4 i{
+    color: lightgrey;
+}
+
+.fixed-bg .content h4 i:hover {
+    color: orange;
+    text-shadow: 0 0 10px black;
+}
+
+.fixed-bg .content h4 i span {
+    font-family: pangolin;
+}
+
+
+
+
+                                                        /* FOOTER EDIT */
+.fa {
+    padding: 20px;
+    font-size: 25px !important;
+    color: white;
+}
+.fa:hover {
+    color: orange;
+}
+.footer {
+    height: 210px;
+    margin-top: -1%;
+}
+.verticalhr {
+    width: 30px;
+    height: 1px;
+    background-color: lightgrey;
+    transform: rotate(90deg);
+}
+#copyright {
+    color: white;
+}
+
+
+                                                        /* MEDIA QUERIES */
+
+@media only screen and (min-height: 1083px) {
+    .fixed-bg .content h1 {
+        margin-top: 10%;
+    }
+    .fixed-bg {
+        min-height: 900px;
+    }
+}
+@media only screen and (min-height: 1177px) {
+    .fixed-bg .content h1 {
+        margin-top: 15%;
+    }
+    .fixed-bg {
+        min-height: 1000px;
+    }
+    .fixed-bg .content h4 {
+        margin-top: 8%;
+    }
+}
+@media only screen and (min-height: 1277px) {
+    .fixed-bg .content h1 {
+        margin-top: 17%;
+    }
+    .fixed-bg {
+        min-height: 1100px;
+    }
+}
+@media only screen and (min-height: 1377px) {
+    .footer {
+        height: 220px;
+    }
+}
+                                                    
+@media only screen and (max-width: 991px) {
+    .nav-link:hover {
+        border-bottom: none;
+    }
+    .active {
+        border-bottom: none;
+    }
+}
+@media only screen and (max-width: 823px){
+    .dee {
+        margin-left: 1%;
+    }
+}
+@media only screen and (max-width: 768px) {
+      #myBtn {
+          right: 20px;
+          width: 40px;
+          height: 40px;
+      }
+}
+@media only screen and (max-width: 688px) {
+    .fixed-bg .content h4 {
+        font-size: 20px;
+    }
+    .fixed-bg .content h4 a {
+        font-size: 20px !important;
+    }
+    .fixed-bg .content h4 i {
+        font-size: 20px !important;
+    }
+}
+@media only screen and (max-width: 484px){
+    .fixed-bg .content h1 {
+        font-size: 38px;
+    }
+}
+@media only screen and (max-width: 463px){
+    .fixed-bg .content h1 {
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 432px){
+    .fixed-bg .content h1 {
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    #myBtn {
+        right: 5px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .fixed-bg .content h1 {
+        font-size: 37px;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .fa {
+        padding: 15px !important;
+    }
+}
+@media only screen and (max-width: 361px) {
+    .fixed-bg .content h1 {
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .fa {
+        font-size: 15px !important;
+    }
+}
+@media only screen and (max-width: 347px) {
+    .fixed-bg .content h4 {
+        font-size: 18px;
+    }
+    .fixed-bg .content h4 a {
+        font-size: 18px !important;
+    }
+    .fixed-bg .content h4 i {
+        font-size: 18px !important;
+    }
+}
+@media only screen and (max-width: 345px){
+    .fixed-bg .content h1 {
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 322px){
+    .fixed-bg .content h1 {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 319px) {
+    .fixed-bg .content h4 {
+        font-size: 16px;
+    }
+    .fixed-bg .content h4 a {
+        font-size: 16px !important;
+    }
+    .fixed-bg .content h4 i {
+        font-size: 16px !important;
+    }
+}
+@media only screen and (max-width: 316px) {
+    .fa {
+        padding: 10px !important;
+    }
+}
+@media only screen and (max-width: 306px){
+    .fixed-bg .content h1 {
+        font-size: 27px;
+    }
+}
+@media only screen and (max-width: 291px) {
+    .fixed-bg .content h4 {
+        font-size: 15px;
+    }
+    .fixed-bg .content h4 a {
+        font-size: 15px !important;
+    }
+    .fixed-bg .content h4 i {
+        font-size: 15px !important;
+    }
+}
+@media only screen and (max-width: 276px) {
+    .fa {
+        padding: 5px !important;
+    }
+}
